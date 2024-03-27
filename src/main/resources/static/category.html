@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit category</title>
+    <style>
+        .ground {
+            margin-left: 30%;
+            margin-right: 30%;
+            border: black 3px solid;
+        }
+        .btn {
+
+            margin-left:80%;
+        }
+        .ground ul li {
+            display: flex;
+        }
+        .ground ul li button {
+            height: 30px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="ground">
+    <h2 style="text-align:center">목록 관리</h2>
+    <button id="returnToMain" class="btn">돌아가기</button>
+    <ul>
+        <li>
+            <p>category1</p>
+            <button>하위 카테고리 추가</button>
+        </li>
+        <li>
+            <p>category1</p>
+            <button>하위 카테고리 추가</button>
+        </li>
+        <li>
+            <p>category1</p>
+            <button>하위 카테고리 추가</button>
+        </li>
+        <li>
+            <p>category1</p>
+            <button>하위 카테고리 추가</button>
+        </li>
+        <li>
+            <p>category1</p>
+            <button>하위 카테고리 추가</button>
+        </li>
+    </ul>
+</div>
+<script>
+    document.getElementById("returnToMain").addEventListener("click", function() {
+        window.location.href="main.html";
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .ground {
+            width: 70%;
+            height: auto;
+            min-height: 500px;
+            margin:auto;
+            border: black 3px solid;
+
+        }
+        .title{
+            font-size:30px;
+        }
+        .button {
+            font-size:15px;
+            margin-top:auto;
+            margin-bottom:auto;
+            margin-right:3px;
+        }
+        .mainContent {
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="ground">
+    <form action="content.html" method="post">
+        <div  style="display: flex">
+            <label class="title">제목: </label>
+            <input type="text" class="title" style="flex-grow:1;margin-right:20px;margin-left:10px" value="내가 만든 제목" readonly/>
+            <button id="returnToMain" class="button" >메인 페이지</button>
+        </div>
+        <div class="mainContent">
+            <input type="text" value="내용들" readonly/>
+        </div>
+        <button id="editBtn">수정하기</button>
+    </form>
+
+</div>
+<script>
+    document.getElementById('returnToMain').addEventListener('click',function() {
+        window.location.href='main.html';
+    });
+</script>
+</body>
+</html>
