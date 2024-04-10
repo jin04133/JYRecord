@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>콘텐츠 수정</title>
+    <style>
+        .ground {
+            width: 70%;
+            height: auto;
+            min-height: 500px;
+            margin:auto;
+            border: black 3px solid;
+
+        }
+        .title{
+            font-size:30px;
+        }
+        .button {
+            font-size:15px;
+            margin-top:auto;
+            margin-bottom:auto;
+            margin-right:3px;
+        }
+        .mainContent {
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+<div class="ground">
+    <form action="content.html" th:action method="post">
+        <div  style="display: flex">
+            <label class="title">제목: </label>
+            <input type="text" class="title" style="flex-grow:1;margin-right:20px;margin-left:10px" placeholder="제목" />
+        </div>
+        <div class="mainContent">
+            <input type="text" placeholder="내용을 추가하세요" />
+        </div>
+        <button type="submit" id="saveBtn">저장하기</button>
+    </form>
+</div>
+</body>
+</html>

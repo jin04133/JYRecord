@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>콘텐츠</title>
     <style>
         .ground {
             width: 70%;
@@ -28,22 +28,26 @@
 </head>
 <body>
 <div class="ground">
-    <form action="content.html" method="post">
-        <div  style="display: flex">
-            <label class="title">제목: </label>
-            <input type="text" class="title" style="flex-grow:1;margin-right:20px;margin-left:10px" value="내가 만든 제목" readonly/>
-            <button id="returnToMain" class="button" >메인 페이지</button>
-        </div>
-        <div class="mainContent">
-            <input type="text" value="내용들" readonly/>
-        </div>
-        <button id="editBtn">수정하기</button>
-    </form>
+
+    <div  style="display: flex">
+        <label class="title">제목: </label>
+        <input type="text" class="title" style="flex-grow:1;margin-right:20px;margin-left:10px" value="내가 만든 제목" readonly/>
+        <button id="returnToMain" class="button" >메인 페이지</button>
+    </div>
+    <div class="mainContent">
+        <input type="text" value="내용들" readonly/>
+    </div>
+    <button id="editBtn">수정하기</button>
+
+
 
 </div>
 <script>
     document.getElementById('returnToMain').addEventListener('click',function() {
-        window.location.href='main.html';
+        window.location.href='/jy.record';
+    });
+    document.getElementById('editBtn').addEventListener('click',function() {
+        window.location.href='/jy.record/content/edit';
     });
 </script>
 </body>

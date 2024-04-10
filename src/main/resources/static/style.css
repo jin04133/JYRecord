@@ -1,0 +1,46 @@
+body {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 6em;
+    margin:auto;
+    width:fit-content;
+}
+ol {
+    list-style-type: decimal;
+    padding-left: 5em;
+    width: 22em;
+}
+.borderDiv {
+    width: 2px;
+    height: auto;
+    background: black;
+
+}
+ol li{
+    font-size: 2em;
+}
+.baseDiv {
+    margin: auto;
+    width: 80%;
+    background: beige;
+}
+.baseDiv .mainDiv {
+    width: fit-content;
+    display: flex;
+}
+.baseDiv .mainDiv .contentDiv {
+    min-width: 800px;
+    margin: 20px;
+}
+/*사용자 모드 만들 때*/
+.baseDiv .navDiv {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+}
+.btn {
+    font-size: 12px;
+}

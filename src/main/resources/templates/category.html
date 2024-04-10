@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>edit category</title>
+    <title>카테고리</title>
     <style>
         .ground {
             margin-left: 30%;
@@ -10,7 +10,6 @@
             border: black 3px solid;
         }
         .btn {
-
             margin-left:80%;
         }
         .ground ul li {
@@ -25,7 +24,7 @@
 <body>
 <div class="ground">
     <h2 style="text-align:center">목록 관리</h2>
-    <button id="returnToMain" class="btn">돌아가기</button>
+    <button class="btn" th:onclick="|location.href='@{/jy.record}'|">돌아가기</button>
     <ul>
         <li>
             <p>category1</p>
@@ -49,10 +48,5 @@
         </li>
     </ul>
 </div>
-<script>
-    document.getElementById("returnToMain").addEventListener("click", function() {
-        window.location.href="main.html";
-    });
-</script>
 </body>
 </html>
