@@ -10,7 +10,8 @@ h1 {
 ol {
     list-style-type: decimal;
     padding-left: 5em;
-    width: 22em;
+    width: 20%;
+    min-width: fit-content;
 }
 .borderDiv {
     width: 2px;
@@ -22,18 +23,23 @@ ol li{
     font-size: 2em;
 }
 .baseDiv {
-    margin: auto;
-    width: 80%;
+    width: 100%;
+    height: fit-content;
     background: beige;
 }
+.baseDiv .titleDiv {
+    background: skyblue ;
+}
 .baseDiv .mainDiv {
-    width: fit-content;
+    width: 100%;
+    height: fit-content;
     display: flex;
 }
 .baseDiv .mainDiv .contentDiv {
-    min-width: 800px;
+    width: 80%;
     margin: 20px;
 }
+
 /*사용자 모드 만들 때*/
 .baseDiv .navDiv {
     display: flex;
