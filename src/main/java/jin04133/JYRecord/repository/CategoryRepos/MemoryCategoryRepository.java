@@ -25,10 +25,17 @@ public class MemoryCategoryRepository implements CategoryRepository {
         return Optional.of(removed);
     }
     @Override
-    public Category createNew(String name) {
-        Category category = new Category(name);
-        storage.put(category.getId(), category);
+    public Category save(Category category) {
+        String id = UUID.randomUUID().toString();
+        category.setId(id);
+        storage.put(id, category);
         return category;
     }
 
+    @Override
+    public void update(String id, Category updateForm) {
+        Category target = findById(id).get();
+        target.setName(updateForm.getName());
+        target.setContentIds(updateForm.getContentIds());
+    }
 }

@@ -1,26 +1,24 @@
 package jin04133.JYRecord.domain;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
-
+@Data
 public class Category {
-    String id;
-    String name;
-    List<String> contents;
+    private String id;
+    private String name;
+    private List<String> contentIds;
 
     public Category(String name) {
-        this.id = UUID.randomUUID().toString();
         this.name = name;
-        this.contents = new LinkedList<>();
+        this.contentIds = new LinkedList<>();
     }
-    public String getId() {
-        return id;
+    public void addContent(String contentId) {
+        contentIds.add(contentId);
     }
 
-    public String getName() {
-        return name;
-    }
 }
 

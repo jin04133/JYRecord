@@ -9,5 +9,6 @@ public interface CategoryRepository {
     public Optional<Category> findById(String id);
     public List<Category> findAll();
     public Optional<Category> delete(String id);
-    public Category createNew(String name);
+    public Category save(Category category);
+    public void update(String id, Category updateForm);
 }

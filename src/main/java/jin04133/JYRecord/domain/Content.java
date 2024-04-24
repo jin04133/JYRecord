@@ -1,14 +1,17 @@
 package jin04133.JYRecord.domain;
 
+import lombok.Data;
+
 import java.time.LocalDateTime;
 
+@Data
 public class Content {
-    Long id;
-    LocalDateTime date;
-    String title;
-    String text;
-    public Content(Long id, LocalDateTime date, String title, String text) {
-        this.id = id;
+    private String id;
+    private LocalDateTime date;
+    private String title;
+    private String text;
+
+    public Content(LocalDateTime date, String title, String text) {
         this.date = date;
         this.title = title;
         this.text = text;

@@ -7,5 +7,6 @@ import java.util.Optional;
 public interface ContentRepository {
     public Optional<Content> findById(String id);
     public Optional<Content> delete(String id);
-    public void save(Content content);
+    public Content save(Content content);
+    public void update(String id, Content updateForm);
 }
